@@ -8,7 +8,7 @@
     <link href="https://getbootstrap.com/docs/3.3/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
     <link href="../static/signup.css" rel="stylesheet">
 
-    
+
   </head>
 
   <body>
@@ -32,7 +32,67 @@
 
       <div class="jumbotron">
         <h1>To Do List App</h1>
-        <form class="form-signin">
+        <html>
+   <body>
+
+      <form action = "{{ url_for('signUp') }}" method = "POST">
+         <h3>Create your Account</h3>
+         Name<br>
+         <input type = "text" name = "name" /></br>
+
+         Email<br>
+         <input type = "email" name = "email" /><br>
+
+         Password<br>
+         <input type = "password" name = "password" /><br>
+
+
+         <input type = "submit" value = "submit" /><br>
+      </form>
+
+   </body>
+</html>
+
+
+
+
+
+
+
+        <!-- <form class="form-horizontal" form action = "{{ url_for('signUp') }}" method = "POST">
+          <div class= "form-group">
+            <label class="control-label col-sm-2" for="name">Name:</label>
+            <div class  ="col-sm-6">
+              <input type="name" class="form-control" id="name" placeholder="Enter name">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class  ="col-sm-6">
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="password">Password:</label>
+            <div class="col-sm-6">
+              <input type="password" class="form-control" id="password" placeholder="Enter password">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-6">
+              <div cla  ss="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </div>
+        </form> -->
+        <!-- <form class="form-signin">
         <label for="inputName" class="sr-only">Name</label>
         <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Name" required autofocus>
         <label for="inputEmail" class="sr-only">Email address</label>
@@ -40,7 +100,7 @@
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
 
-        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Sign up</button>
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button> -->
       </form>
       </div>
 
