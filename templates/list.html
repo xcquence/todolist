@@ -1,8 +1,4 @@
 
-
-
-
-
 <ul>
 {% for task in tasks %}
     <li>
@@ -15,13 +11,11 @@
 
 
 <form action="/task" method="post">
-    <p><input type="text" name="content"></p>
+    <p><input type="text" name="content" value="Enter text here"></p>
     <input type="submit" value="Add task">
-
 
 
 </form>
 
 
-
-<a href=dropsession><input type=”button”>Logout</button></a>
+<center><p><a href="/dropsession"><input type=”button” value="Click here to logout">Logout</button></a></p></center>

@@ -1,33 +1,20 @@
-<!-- <html>
-<head>
-    <title>Login Page</title>
-</head>
-<body>
-<h1>Please login</h1>
-<form method="POST">
-    <input type="text" name="username">
-    <input type="password" name="password">
-    <p>DISCLAIMER: password must be "password" to enter </p>
-    <input type="submit">
-</form>
-</body>
-</html> -->
 <html>
   <head>
-    <title>SIGN UP AND REGISTER</title>
+    <title>Flask Intro - login page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
   <body>
     <div class="container">
-      <h1>Please Sign Up and Register</h1>
+      <h1>Please login</h1>
       <br>
-      <form action="{{ url_for('register')}}" method="post">
+      <form action="" method="post">
         <input type="text" placeholder="Username" name="username" value="{{
           request.form.username }}">
          <input type="password" placeholder="Password" name="password" value="{{
           request.form.password }}">
-        <input class="btn btn-default" type="submit" value="Sign up">
+        <input class="btn btn-default" type="submit" value="Login">
+        <p1> SMALL THING i forgot to include: PASSWORD does not matter but USERNAME does </p1>
       </form>
       {% if error %}
         <p class="error"><strong>Error:</strong> {{ error }}
